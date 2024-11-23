@@ -31,7 +31,6 @@ patient = {
             "Income":1.0
             }
 
-#patient = np.array(list(patient.values())).reshape(1,-1)
 response = requests.post(url, json=patient).json()
 
 print(response)
