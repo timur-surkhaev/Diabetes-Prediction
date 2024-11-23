@@ -13,7 +13,7 @@ print(pd.__version__)
 
 
 # Preparing data
-df = pd.read_csv("Data/diabetes_binary_health_indicators_BRFSS2015.csv")
+df = pd.read_csv("data/diabetes_binary_health_indicators_BRFSS2015.csv")
 df.columns = ['Diabetes'] + list(df.columns[1:]) # Target variable
 
 print(df.shape)
@@ -106,5 +106,5 @@ print(f'F1 thr:\t{round(f1_thr, 3)}')
 print(f"Best threshold (F1-Score): {round(best_threshold, 3)}")
 
 # Saving the best model
-with open('the_best_model.pkl', 'wb') as file:
+with open('models/the_best_model.pkl', 'wb') as file:
     pickle.dump(the_best_model, file)

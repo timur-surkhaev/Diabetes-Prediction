@@ -9,7 +9,7 @@ from flask import request
 from flask import jsonify
 
 
-model_file = 'the_best_model.pkl'
+model_file = 'models/the_best_model.pkl'
 
 with open(model_file, 'rb') as f_in:
     model = pickle.load(f_in)

@@ -4,11 +4,15 @@ RUN pip install pipenv
 
 WORKDIR /app
 
-COPY ["Pipfile", "Pipfile.lock", "./"]
 
+RUN mkdir /app/models
+COPY ["source/predict.py", "./"] 
+COPY ["models/the_best_model.pkl", "./models"]
+
+
+COPY ["Pipfile", "Pipfile.lock", "./"]
 RUN pipenv install --system --deploy
 
-COPY ["predict.py", "the_best_model.pkl", "./"]
 
 EXPOSE 8000
 
