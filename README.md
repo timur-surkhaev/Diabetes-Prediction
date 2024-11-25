@@ -8,6 +8,7 @@ EDA, model training and selecting are provided in notebooks/diabetes_prediction.
 
 The final process of model training, selecting and saving is provided in source/train.py
 
+<b>NB!</b> Only the libraries necessary for automatic training and testing of models, as well as for launching the prediction service, are included in the virtual environment. The .ipynb notebook is not required for this purpose, so it can be opened in any environment that contains the necessary libraries (e.g., seaborn, matplotlib, etc.).
 
 
 ## Containerization
