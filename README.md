@@ -52,7 +52,7 @@ pipenv shell
 
 ## Test
 
-After the docker-container has started, you might to send a test request (in the activated virtual envinronment):
+After the Docker container has been launched, you can send a test request in the activated virtual environment
 ```bash
 python3 tests/test_request_01.py
 ```
