@@ -8,19 +8,19 @@ EDA, model training and selecting are provided in notebooks/diabetes_prediction.
 
 The final process of model training, selecting and saving is provided in source/train.py
 
-<b>NB!</b> Only the libraries necessary for automatic training and testing of models, as well as for launching the prediction service, are included in the virtual environment. The .ipynb notebook is not required for this purpose, so it can be opened in any environment that contains the necessary libraries (e.g., seaborn, matplotlib, etc.).
+<b>NB!</b> Only the libraries necessary for automatic training and testing of models, as well as for launching the prediction service, are included in the virtual environment. The .ipynb notebook is not required for this purpose, so it can be opened in any environment that contains the necessary libraries (seaborn, matplotlib, etc.).
 
 
 ## Containerization
 
 Docker image: https://hub.docker.com/repository/docker/tsurkhaev/diabetes-prediction/general
 
-Pull the docker image: 
+1. Pull the docker image: 
 ```bash
 sudo docker pull tsurkhaev/diabetes-prediction:v1.0
 ```
 
-Run the container: 
+2. Run the container: 
 ```bash
 sudo docker run --rm -it -p 0.0.0.0:8000:8000 tsurkhaev/diabetes-prediction:v1.0
 ```
@@ -32,7 +32,7 @@ sudo docker build -t diabetes-prediction:local .
 
 ## Virtual envinronment
 
-Installing virtual envinronment:
+Installing the virtual envinronment:
 
 1. Get the repository:
 ```bash
