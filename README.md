@@ -4,9 +4,9 @@ Predicting presence or absence of diabetes (including prediabetic conditions) ba
 
 Data is from https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset
 
-EDA, model training and selecting are provided in notebooks/diabetes_prediction.ipynb
+EDA, model training, and selection are provided in notebooks/diabetes_prediction.ipynb.
 
-The final process of model training, selecting and saving is provided in source/train.py
+The final process of model training, selection, and saving is provided in source/train.py.
 
 <b>NB!</b> Only the libraries necessary for automatic training and testing of models, as well as for launching the prediction service, are included in the virtual environment. The .ipynb notebook is not required for this purpose, so it can be opened in any environment that contains the necessary libraries (seaborn, matplotlib, etc.).
 
@@ -30,9 +30,9 @@ Optionally. Build the container locally (if you have a local copy of the reposit
 sudo docker build -t diabetes-prediction:local .
 ```
 
-## Virtual envinronment
+## Virtual environment
 
-Installing the virtual envinronment:
+Installing the virtual environment:
 
 1. Get the repository:
 ```bash
@@ -46,7 +46,7 @@ pip install pipenv
 pipenv install --ignore-pipfile
 ```
 
-3. Activate the virtual envinronment (in the root project directory):
+3. Activate the virtual environment (in the root project directory):
 ```bash
 pipenv shell
 ```
